@@ -35,10 +35,10 @@ jobs:
         uses: actions/configure-pages@v4
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4  # 更新到 v4 版本
+        uses: actions/upload-pages-artifact@v2  # 使用当前最新的稳定版本 v2
         with:
           path: './dist'
           
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # 更新到 v4 版本
+        uses: actions/deploy-pages@v3  # 使用当前最新的稳定版本 v3
